@@ -50,7 +50,7 @@ membri.push(membro6);
 
 console.log(membri);
 
-for(let i=0; i<6; i++) {
+for(let i=0; i<membri.length; i++) {
     const card = document.createElement("div")
     card.classList.add("card")
 
