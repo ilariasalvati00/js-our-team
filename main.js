@@ -53,7 +53,7 @@ console.log(membri);
 for(let i=0; i<6; i++) {
     const nome = document.createElement("p"); //Ho creato l'elemento e l'ho messo nella costante che si chiama nome
     const ruolo = document.createElement("p");
-    const foto = document.createElement ("p");
+    const foto = document.createElement ("img");
 
     //Dopo aver creato gli elementi li metto nel main
     const main = document.getElementById("container"); 
@@ -65,7 +65,7 @@ for(let i=0; i<6; i++) {
     //Riempio di contenuto i p 
     nome.innerHTML = membri[i].nome;
     ruolo.innerHTML = membri[i].ruolo;
-    foto.innerHTML = membri[i].foto;
+    foto.src = membri[i].foto;
 
     
 }
