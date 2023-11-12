@@ -50,4 +50,22 @@ membri.push(membro6);
 
 console.log(membri);
 
+for(let i=0; i<6; i++) {
+    const nome = document.createElement("p"); //Ho creato l'elemento e l'ho messo nella costante che si chiama nome
+    const ruolo = document.createElement("p");
+    const foto = document.createElement ("p");
 
+    //Dopo aver creato gli elementi li metto nel main
+    const main = document.getElementById("container"); 
+
+    main.appendChild(nome);
+    main.appendChild(ruolo);
+    main.appendChild(foto); 
+
+    //Riempio di contenuto i p 
+    nome.innerHTML = membri[i].nome;
+    ruolo.innerHTML = membri[i].ruolo;
+    foto.innerHTML = membri[i].foto;
+
+    
+}
