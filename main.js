@@ -51,16 +51,21 @@ membri.push(membro6);
 console.log(membri);
 
 for(let i=0; i<6; i++) {
-    const nome = document.createElement("p"); //Ho creato l'elemento e l'ho messo nella costante che si chiama nome
+    const card = document.createElement("div")
+    card.classList.add("card")
+
+    const nome = document.createElement("h2"); //Ho creato l'elemento e l'ho messo nella costante che si chiama nome
     const ruolo = document.createElement("p");
     const foto = document.createElement ("img");
+
+    card.appendChild(foto);
+    card.appendChild(nome);
+    card.appendChild(ruolo);
 
     //Dopo aver creato gli elementi li metto nel main
     const main = document.getElementById("container"); 
 
-    main.appendChild(nome);
-    main.appendChild(ruolo);
-    main.appendChild(foto); 
+    main.appendChild(card);
 
     //Riempio di contenuto i p 
     nome.innerHTML = membri[i].nome;
