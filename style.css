@@ -1,0 +1,13 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+   width: 50%;
+   margin: auto;
+}
+
+header p{
+    color: grey;
+}
